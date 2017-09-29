@@ -1,13 +1,14 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Lists : MonoBehaviour {
 
-	public Lists<GameObject> myWeapon;
+	public List<GameObject> myWeapon;
 	
 	
 	void OnTriggerEnter(Collider _weapon)
     {
-        myWeapons.Add(_weapon.gameObject);	
+        myWeapon.Add(_weapon.gameObject);	
 	}
 }
