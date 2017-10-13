@@ -5,14 +5,14 @@ using UnityEngine;
 public class Animal : MonoBehaviour {
     public string[] foxFood = { "Bananas", "Apples", "Grapes", "Chicken", "Turkey", "Cake" };
 
-    pubblic int[] foodCount = { 10, 2, 30, 1, 2, 1};
+    public int[] foodCount = { 10, 2, 30, 1, 2, 1};
 
     public virtual void Start () {
         Die();
 
-        for (int i = 0 < foxFood.Length; i++);
+        for (int i = 0; i < foxFood.Length; i++)
         {
-            Eat(foxFood[i], FoodCount[i]);
+            Eat(foxFood[i], foodCount[i]);
         }
 
         Sleep();
